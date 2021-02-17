@@ -77,7 +77,7 @@
                                 </ul>
                             </div>
                             <div class="align-self-center ml-auto header-col-right">
-                                <a class="btn-custom" href="#"><i class="fa fa-arrow-down"></i> Contact Now</a>
+                                <a class="btn-custom" href="contact.html"><i class="fa fa-arrow-down"></i> Contact Now</a>
                                 <span id="menu-btn"></span>
                             </div>
                             <div class="clearfix"></div>
@@ -248,7 +248,7 @@
                                             </div>
             
                                             <div class="action">
-                                                <a href="" class="btn-custom">Sign Up Now</a>
+                                                <a href="" data-toggle="modal" data-target="#getquote" class="btn-custom">Sign Up Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -280,7 +280,7 @@
                                             </div>
             
                                             <div class="action">
-                                                <a href="" class="btn-custom">Sign Up Now</a>
+                                                <a href="" data-toggle="modal" data-target="#getquote" class="btn-custom">Sign Up Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -311,7 +311,7 @@
                                             </div>
             
                                             <div class="action">
-                                                <a href="" class="btn-custom">Sign Up Now</a>
+                                                <a href="" data-toggle="modal" data-target="#getquote" class="btn-custom">Sign Up Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -371,7 +371,7 @@
                                                 </div>
                 
                                                 <div class="action">
-                                                    <a href="" class="btn-custom">Sign Up Now</a>
+                                                    <a href="" data-toggle="modal" data-target="#getquote" class="btn-custom">Sign Up Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -403,7 +403,7 @@
                                                 </div>
                 
                                                 <div class="action">
-                                                    <a href="" class="btn-custom">Sign Up Now</a>
+                                                    <a href="" data-toggle="modal" data-target="#getquote" class="btn-custom">Sign Up Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -434,7 +434,7 @@
                                 +91 99167 33303
                             </span>
                         
-                        <a href="#" class="btn-custom capsule med">Contact Us</a>
+                        <a href="#" data-toggle="modal" data-target="#getquote" class="btn-custom capsule med">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -444,44 +444,113 @@
 
 
         <!-- Modal -->
-        <div class="modal fade text-dark" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade text-dark" id="getquote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Get a Quote from Us</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
-                            eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-                            magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                            dolor auctor.</p>
         
-                        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
-                            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis
-                            consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                        <div class="row">
         
-                        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
-                            eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-                            magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                            dolor auctor.</p>
+                            <div class="col-lg-8 offset-md-2">
         
-                        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
-                            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis
-                            consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        
+                                <form name="contactForm" id="contact_form" class="form-border" method="post" action="email.php">
+                                    <div class="field-set">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" />
+                                    </div>
+        
+                                    <div class="field-set">
+                                        <input type="text" name="email" id="email" class="form-control"
+                                            placeholder="Your Email" />
+                                    </div>
+        
+                                    <div class="field-set">
+                                        <input type="text" name="phone" id="phone" class="form-control"
+                                            placeholder="Your Phone" />
+                                    </div>
+        
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" id="service" name="service[]"
+                                                value="Website Design">Website
+                                            Design
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" id="service" name="service[]"
+                                                value="Digital Marketing">Digital Marketing
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" id="service" name="service[]"
+                                                value="School Management Softwares">School Management Softwares
+                                        </label>
+                                    </div>
+        
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" id="service" name="service[]"
+                                                value="Billing Software">Billing Software
+                                        </label>
+                                    </div>
+        
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" id="service" name="service[]"
+                                                value="Web/Mobile Apps">Web/Mobile Apps
+                                        </label>
+                                    </div>
+        
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" id="service" name="service[]"
+                                                value="E-Commerce">E-Commerce
+                                        </label>
+                                    </div>
+        
+        
+        
+                                    <div class="field-set">
+                                        <textarea name="message" id="message" class="form-control"
+                                            placeholder="Your Message"></textarea>
+                                    </div>
+        
+                                    <div class="spacer-half"></div>
+        
+                                    <div id="submit">
+                                        <input type="submit" id="send_message" value="Submit Form" class="btn btn-custom" />
+                                    </div>
+                                    <div id="mail_success" class="success">Your message has been sent successfully.</div>
+                                    <div id="mail_fail" class="error">Sorry, error occured this time sending your message.</div>
+                                </form>
+                            </div>
+        
+                            <div class="spacer-double"></div>
+        
+        
+        
+                        </div>
+        
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
+        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
         </div>
+        </div>
+
 
         <!-- footer begin -->
         <footer class="footer-light">
@@ -538,7 +607,7 @@
 
                 <div class="row">
                     <div class="col-md-6 sm-text-center mb-sm-30">
-                        <div class="mt10">&copy; Copyright 2020 - Paatashalas.com</div>
+                        <div class="mt10">&copy; Copyright 2021 - Paatashalas.com</div>
                     </div>
 
                     <div class="col-md-6 text-md-right text-sm-left">
@@ -563,6 +632,63 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            
+            //Contact Form validation on click event
+            $("#contact_form").on("submit", function () {
+                var valid = true;
+               
+                var service;
+                var userName = $("#name").val();
+                var userEmail = $("#email").val();
+                var phone = $("#phone").val();
+                var message = $("#message").val();
+
+                $(" :checkbox:checked").each(function(i){
+                     service[i] = $("#service").val(); 
+                });
+
+                if (userName == "") {
+                    $("#userName-info").html("required.");
+                    // $("#userName").addClass("input-error");
+                }
+                if (userEmail == "") {
+                    $("#userEmail-info").html("required.");
+                    // $("#userEmail").addClass("input-error");
+                    valid = false;
+                }
+                if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+                    $("#userEmail-info").html("invalid.");
+                    // $("#userEmail").addClass("input-error");
+                    // valid = false;
+                }
+
+                if (phone == "") {
+                    $("#subject-info").html("required.");
+                    // $("#subject").addClass("input-error");
+                    // valid = false;
+                }
+                if (message == "") {
+                    $("#userMessage-info").html("required.");
+                    // $("#message").addClass("input-error");
+                    // valid = false;
+                }
+                return valid;
+
+                $.ajax({
+                    type :'post',
+                    url : 'email.php',
+                    data : 
+                    {
+                        userName : userName
+                    }
+                });
+
+            });
+        });
+    </script>
 
     <!-- Javascript Files
     ================================================== -->
